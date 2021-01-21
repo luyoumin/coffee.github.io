@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    background: black;
+    padding: 20px;
+    height: 400px;
+    background-image: url(image/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header nav {
+    text-align: center;
+}
+
+header .mobile {
+    display: none;
+}
+
+ul {
+    
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .logo a {
+    background:url(image/dark.png) no-repeat;
+    background-size: 300px;
+    /* position: center; */
+    display: inline-block;
+    height: 80px;
+    width: 300px;
+    text-indent: -99999999px;
+    position: relative;
+    top: -30px;
+}
+
+@media screen and (max-width:737px) {
+    header {
+        height: 250px;
+        background-position: 0 -30px;
+    }
+
+    header .mobile {
+        display: inline-block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+media screen and (max-width:500px) {
+    header {
+        height: 200 px;
+        background-position: 0 -0px;
+    }
+}
+/* section */
+.feature {
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.feature figure {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+figure img {
+    border: 1ps solid white;
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: gray 0px 0px 10px;
+  
+}
+/* RESPONSIVE RULES */
+/* @media screen and (max-width:737px) {
+    .feature {
+        display: block;
+    }
+} */
+
+/* footer */
+footer {
+    background:black;
+    color: gray;
+    font-size: 16px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/* @media screen and (min-width:400px) {
+    .feature {
+        background: pink;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .feature {
+        background: red;
+    }
+} */
+
+
